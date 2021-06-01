@@ -11,7 +11,7 @@ To log into a Azure, we recommend using the [Azure Login](https://github.com/Azu
 
 ```
 
-action "Manage Azure testing Resources" {
+action "Manage Azure git connect test Resources" {
   uses = "Azure/github-actions/arm@master"
   env = {
     AZURE_RESOURCE_GROUP = "<Resource Group Name"
