@@ -1,14 +1,19 @@
-resources:
-- repo: self
-
-pool:
-  vmImage: 'ubuntu-16.04'
+# Starter pipeline
+# Start with a minimal pipeline that you can customize to build and deploy your code.
+# Add steps that build, run tests, deploy, and more:
+# https://aka.ms/yaml
 
 trigger:
 - master
 
+pool:
+  vmImage: ubuntu-latest
+
 steps:
+- script: echo Hello, world!
+  displayName: 'Run a one-line script'
+
 - script: |
-    for SCRIPT in $(find . -type f -name \*\.sh | xargs); do
-      docker run --rm -v '$(Build.SourcesDirectory):/mnt' -t koalaman/shellcheck $SCRIPT
-    done
+    echo Add other tasks to build, test, and deploy your project.
+    echo See https://aka.ms/yaml
+  displayName: 'Run a multi-line script'
