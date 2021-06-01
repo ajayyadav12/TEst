@@ -6,7 +6,7 @@ One can also use this to delete a resource group, including all the resources wi
 To log into a Azure, we recommend using the [Azure Login](https://github.com/Azure/github-actions/tree/master/login) Action.
 
 
-
+## test
 ## Usage
 
 ```
